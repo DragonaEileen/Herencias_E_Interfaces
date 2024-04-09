@@ -35,8 +35,13 @@ public class Rectangulo extends Poligono{
 		/* Un rectangulo tiene 4 lados */
 		super(4);
 		
-		this.lado1 = lado1;
-		this.lado2 = lado2;
+		/* Comprobaciones: los lados tienen que ser mayores a 0 */
+		if(lado1 > 0 && lado2 > 0) {
+			
+			this.lado1 = lado1;
+			this.lado2 = lado2;
+		
+		}//Fin IF --> Check
 		
 	}//Fin Constructor WITH Parameters
 	
