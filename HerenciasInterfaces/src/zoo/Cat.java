@@ -3,7 +3,7 @@ package zoo;
 /**
  * A cat that does what a cat does
  */
-public class Cat extends Mammal{
+public class Cat extends Animal implements Mammal{
 	
 	/* Fields */
 	/**
@@ -21,11 +21,13 @@ public class Cat extends Mammal{
 	 * Constructor with Parameters of a Wild Cat
 	 * 
 	 * @param catBreed Breed of the cat
+	 * @param gender Gender of the cat
 	 */
-	public Cat(String catBreed) {
+	public Cat(String catBreed, String gender) {
 		
 		/* If the cat is wild, the super.domestic keeps being false */
 		this.catBreed = catBreed;
+		super.gender = gender;
 		
 	}//Fin constructor (breed)
 	
@@ -33,15 +35,22 @@ public class Cat extends Mammal{
 	 * Constructor WITH ALL Parameters
 	 * 
 	 * @param catBreed Breed of the cat
+	 * @param gender Gender of the cat
 	 * @param catName Name of a domestic cat
 	 */
-	public Cat(String catBreed, String catName) {
+	public Cat(String catBreed, String gender, String catName) {
 		
 		/* If the cat has a name, it's a domestic cat */
 		this.catBreed = catBreed;
 		this.catName = catName;
 		super.domestic = true;
+		super.gender = gender;
 		
 	}//Fin Constructor (Breed, Name)
+	
+	/* Hereditary Methods */
+	/**
+	 * 
+	 */
 	
 }

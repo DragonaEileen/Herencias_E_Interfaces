@@ -7,22 +7,12 @@ package zoo;
  *  
  * @author emiralles
  */
-class Mammal implements Creature{
+interface Mammal {
 
-	/* Fields */
-	/**
-	 * Gender of the Mammal
-	 */
-	String gender;
-	
-	/**
-	 * Is the mammal domestic?
-	 */
-	boolean domestic = false;
-	
-	/* Métodos */
+	/* Methods */
 	/**
 	 * Method to feed milk to their young
 	 */
+	abstract void feedMilk();
 	
 }

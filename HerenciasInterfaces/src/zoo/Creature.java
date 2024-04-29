@@ -24,7 +24,7 @@ interface Creature {
 	void toDie();
 	
 	/**
-	 * Method to aquire nutrition: the eating habits of a creature
+	 * Method to acquire nutrition: the eating habits of a creature
 	 */
 	void toEat();
 	
