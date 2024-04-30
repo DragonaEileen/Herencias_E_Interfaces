@@ -68,7 +68,7 @@ public class Cat extends Animal implements Mammal{
 	 * @param otherParent The other parent of the new kitty
 	 * @return kitty A new Kitty Cat
 	 */
-	public Cat toBirth(Cat otherParent) {
+	public Animal toBirth(Animal parent) {
 		
 		/* Fields */
 		/* Per Code Clarity: Lets declare the kitty */
@@ -82,6 +82,9 @@ public class Cat extends Animal implements Mammal{
 		
 		/* A random int for fate purposes */
 		int random;
+		
+		/* Cast otherParent */
+		Cat otherParent = ((Cat) parent);
 		
 		/* Depending on the breed of the parents the kitty is gonna have 
 		 * one breed or another*/
@@ -149,7 +152,7 @@ public class Cat extends Animal implements Mammal{
 		
 	}//Fin toEat()
 	
-	
+	public void feedMilk() {};
 	
 	
 }

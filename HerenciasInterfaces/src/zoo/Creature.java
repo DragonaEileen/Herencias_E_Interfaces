@@ -16,11 +16,11 @@ interface Creature {
 	/**
 	 * Method to initiate a creature of the same kin: the birth of them
 	 */
-	void toBirth();
+	Animal toBirth(Animal a);
 	
-	/**
-	 * Method to acquire nutrition: the eating habits of a creature
-	 */
-	void toEat();
+//	/**
+//	 * Method to acquire nutrition: the eating habits of a creature
+//	 */
+//	void toEat();
 	
 }
