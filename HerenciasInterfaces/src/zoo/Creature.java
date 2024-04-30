@@ -14,28 +14,13 @@ interface Creature {
 
 	/* Methods */
 	/**
-	 * Method to initiate a creature: the birth of them
+	 * Method to initiate a creature of the same kin: the birth of them
 	 */
-	void toBeBorn();
-	
-	/**
-	 * Method to eliminate a creature: the death of the creature
-	 */
-	void toDie();
+	void toBirth();
 	
 	/**
 	 * Method to acquire nutrition: the eating habits of a creature
 	 */
 	void toEat();
-	
-	/**
-	 * Method to interact with the world around: interaction of the creature
-	 */
-	void toInteract();
-
-	/**
-	 * Method to reproduce themselves: mating or creating descendants. 
-	 */
-	void toReproduce();
 	
 }
